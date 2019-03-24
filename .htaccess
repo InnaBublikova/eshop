@@ -1,0 +1,3 @@
+# .htaccess для магазина
+Options Indexes FollowSymLinks
+DirectoryIndex catalog.php
