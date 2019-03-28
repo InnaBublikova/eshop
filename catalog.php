@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 	// подключение библиотек
 	require "inc/lib.inc.php";
 	require "inc/db.inc.php";
@@ -19,17 +20,17 @@
 </tr>
 <?php
 $goods=selectAllItems($link);
-foreach($goods as $item){?>
+foreach($goods as $item){
+	?>
 	<tr>
 		<td><?=$item['title']?></td>
 		<td><?=$item['author']?></td>
 		<td><?=$item['pubyear']?></td>
 		<td><?=$item['price']?></td>
 		<td><a href="http://eshop/add2basket.php?id=eshop&put=<?php echo $item['id'] ?> ">В корзину</a></td>
-	</tr><?
-		
-}
-?>
+	<?}
+?>	
+
 </table>
 </body>
 </html>
