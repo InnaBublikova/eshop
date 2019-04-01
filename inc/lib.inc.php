@@ -93,10 +93,10 @@ function saveOrder($datetime,$orderid){// сохранение заказа
     }
 function getOrders(){//просмотр заказа
 	global $link;
-	if(!is_file("ORDER_LOG")){
+	if(!is_file("orders.log")){
 		return false;}
 		else{
-	$orders=file("ORDER_LOG");
+	$orders=file("orders.log");
 	$allorders=array();
 	foreach ($orders as $order) {
 		list($name,$email,$phone,$address,$orderid,$date)=explode("|",$order);

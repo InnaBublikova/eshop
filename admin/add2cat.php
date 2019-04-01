@@ -1,6 +1,6 @@
 <?
 header ('Content-Type: text/html; charset=utf-8');
-//require "secure/session.inc.php";
+require "secure/session.inc.php";
 ?>
 <html>
 <head>

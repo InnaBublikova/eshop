@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $address = trim(strip_tags($_POST['address']));
         $order=$name.'|'.$email.'|'.$phone.'|'.$address.'|'.$orderid.'|'.$datetime=time();
     }
-$fp = fopen("$ORDERS_LOG", "a");
+$fp = fopen("orders.log", "a");
 fwrite($fp, $order . PHP_EOL);
 fclose($fp);
 saveOrder($datetime,$orderid);

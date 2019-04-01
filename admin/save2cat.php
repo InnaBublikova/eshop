@@ -2,7 +2,7 @@
 
 header('Content-Type: text/html; charset=utf-8');
 	// подключение библиотек
-	//require "secure/session.inc.php";
+	require "secure/session.inc.php";
 	require "../inc/lib.inc.php";
 	require "../inc/db.inc.php";
 

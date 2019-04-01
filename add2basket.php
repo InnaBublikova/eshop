@@ -1,5 +1,5 @@
 <?php
-	// ïîäêëþ÷åíèå áèáëèîòåê
+	//Ã¯Ã®Ã¤ÃªÃ«Ã¾Ã·Ã¥Ã­Ã¨Ã¥ Ã¡Ã¨Ã¡Ã«Ã¨Ã®Ã²Ã¥Ãª
 	require "inc/lib.inc.php";
 	require "inc/db.inc.php";
 	$id=abs((int)$_GET['put']);
